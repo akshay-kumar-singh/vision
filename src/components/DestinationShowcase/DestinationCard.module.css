@@ -1,0 +1,53 @@
+.destinationCard {
+    width: 250px;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    background-color: #fff;
+  }
+  
+  .cityImage {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+  
+  .destinationDetails {
+    text-align: left;
+    margin-top: 10px;
+  }
+  
+  .destinationHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .destinationName {
+    font-size: 18px;
+    margin: 0;
+  }
+  
+  .miles {
+    font-size: 16px;
+    color: #28a745; 
+  }
+  
+  .milesLabel {
+    color: #000; 
+  }
+  
+  .cityListContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 10px;
+  }
+  
+  .cityItem {
+    background-color: #f0f0f0;
+    padding: 5px 10px;
+    border-radius: 5px;
+  }
+  

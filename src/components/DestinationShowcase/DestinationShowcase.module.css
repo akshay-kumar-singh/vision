@@ -1,0 +1,21 @@
+.destinationShowcase {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .title {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .whiteContainer {
+    background-color: #fafafa; 
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px; 
+    margin-left: auto;
+    margin-right: auto;
+  }
+  

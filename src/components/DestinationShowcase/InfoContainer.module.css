@@ -1,0 +1,19 @@
+.infoContainer {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    font-size: 16px;
+  }
+  
+  .infoText {
+    flex: 1;
+  }
+  
+  .align {
+    text-align: left;
+  }
+  
+  .boldText {
+    font-weight: bold;
+  }
+  

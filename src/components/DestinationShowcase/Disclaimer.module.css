@@ -1,0 +1,14 @@
+.disclaimerContainer {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  .disclaimerText {
+    font-size: 14px;
+    color: #333; /* Dark color for the text */
+  }
+  
+  .disclaimerText strong {
+    font-weight: bold; 
+  }
+  

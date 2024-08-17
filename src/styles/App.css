@@ -1,0 +1,22 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f5f5f5;
+  }
+  
+  h1, h2, h3 {
+    color: #333;
+  }
+  
+  .main-title, .sub-title {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .miles-calculator, .destination-showcase {
+    padding: 20px;
+    margin-bottom: 40px;
+  }
+  

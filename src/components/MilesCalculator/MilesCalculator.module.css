@@ -1,0 +1,246 @@
+.milesCalculator {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .mainTitle {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 8px;
+  }
+  
+  .subTitle {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 20px;
+  }
+  
+  .optionsContainer {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+    text-align: left;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .sectionHeader {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .label {
+    font-size: 18px;
+    font-weight: 500;
+  }
+  
+  .optionButtons {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .option {
+    padding: 10px 20px; 
+    border-radius: 32px;
+    background-color: #e1e5e9;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
+    color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease; 
+  }
+  
+  .option.active {
+    background-color: #e1e5e9; 
+    color: #3c5ceb; 
+  }
+  
+  .option.active::before {
+    content: '';
+    display: block;
+    width: 12px; 
+    height: 12px;
+    border-radius: 50%;
+    background-color: #fff; 
+    position: absolute;
+    top: 50%;
+    left: 10px; 
+    transform: translateY(-50%);
+  }
+  
+  /* How much to deposit section */
+  .depositSection {
+    margin-top: 20px;
+  }
+  
+  .depositSection .label {
+    display: block;
+    margin-bottom: 30px;
+  }
+  
+  .currencyButtons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+   
+  }
+  
+  .currency {
+    padding: 10px 20px; 
+    border-radius: 25px;
+    background-color: #e1e5e9;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
+    color: #333;
+  }
+  
+  .currency.active {
+    background-color: #e1e5e9;
+    color: #3c5ceb;
+  }
+  
+  /* Amount and pencil icon section */
+  .amountSection {
+    margin-top: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+  }
+  
+  .amount {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .pencilIcon {
+    font-size: 20px;
+    cursor: pointer;
+    color: #007bff;
+  }
+  
+  /* Gray Line with Blue Circle within the container */
+  .lineWithCircleContainer {
+    margin-top: 30px; 
+    display: flex;
+    justify-content: center; 
+  }
+  
+  .lineWithCircle {
+    display: flex;
+    align-items: center;
+    width: 100%; 
+    max-width: 600px; 
+  }
+  
+  .lineWithCircle::before {
+    content: '';
+    display: block;
+    width: 24px; 
+    height: 24px;
+    border: 4px solid #007bff; 
+    border-radius: 50%;
+    margin-right: 10px; 
+  }
+  
+  .lineWithCircle::after {
+    content: '';
+    display: block;
+    flex-grow: 1;
+    height: 2px; 
+    background-color: #ccc; 
+  }
+  
+  /* Additional Sections */
+  .additionalSections {
+    margin-top: 30px;
+    display: flex;
+    margin-left: 10px;
+  }
+  
+  .textSection {
+    margin-bottom: 30px;
+    padding-left: 20px; 
+  }
+  
+  .textSection .label {
+    display: block;
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 25px;
+  }
+  
+  .grayContainer {
+    background-color: #f0f0f0; 
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px; 
+    width: 100%; 
+    max-width: 600px; 
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .rewardText {
+    font-size: 18px;
+    font-weight: 500;
+    color: #333;
+    margin-bottom: 15px; 
+  }
+  
+  .rewardDetails {
+    display: flex;
+    align-items: center;
+    gap: 10px; 
+  }
+  
+  .planeIcon {
+    font-size: 24px;
+    color: #007bff; 
+  }
+  
+  .milesAmount {
+    font-size: 24px;
+    font-weight: bold;
+    color: #007bff;
+  }
+  
+  .applyButton {
+    margin-top: 20px; 
+    padding: 10px 20px;
+    background-color: #007bff; 
+    color: #fff; 
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s ease; 
+  }
+  
+  .applyButton:hover {
+    background-color: #0056b3; 
+  }
+  
+  .travelText {
+    margin-top: 20px; 
+    font-size: 16px;
+    color: #333;
+    text-align: center;
+    line-height: 1.5;
+  }
+  
