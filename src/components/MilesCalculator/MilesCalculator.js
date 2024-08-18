@@ -1,16 +1,18 @@
 import React, { useState } from 'react';
 import Header from './Header';
 import SectionHeader from './SectionHeader';
-import OptionButtons from './OptionButtons';
-import CurrencyButtons from './CurrencyButtons'; 
+import CurrencyButtons from './CurrencyButtons';
 import AmountSection from './AmountSection';
 import LineWithCircle from './LineWithCircle';
 import GrayContainer from './GrayContainer';
+import DepositOptions from './DepositeOptions';
 import styles from './MilesCalculator.module.css';
 
 const MilesCalculator = () => {
   const [applyingFrom, setApplyingFrom] = useState('Online');
   const [currency, setCurrency] = useState('HKD');
+  const [fundsOption, setFundsOption] = useState('New Funds');
+  const [durationOption, setDurationOption] = useState('6 Months');
 
   return (
     <div className={styles.milesCalculator}>
@@ -18,11 +20,20 @@ const MilesCalculator = () => {
 
       <div className={styles.optionsContainer}>
         <SectionHeader label="Applying From">
-          <OptionButtons
-            options={['Online', 'In Branch']}
-            activeOption={applyingFrom}
-            onClick={setApplyingFrom}
-          />
+          <div className={styles.optionButtons}>
+            <span
+              className={`${styles.option} ${applyingFrom === 'Online' ? styles.active : ''}`}
+              onClick={() => setApplyingFrom('Online')}
+            >
+              Online
+            </span>
+            <span
+              className={`${styles.option} ${applyingFrom === 'In Branch' ? styles.active : ''}`}
+              onClick={() => setApplyingFrom('In Branch')}
+            >
+              In Branch
+            </span>
+          </div>
         </SectionHeader>
 
         <div className={styles.depositSection}>
@@ -37,24 +48,12 @@ const MilesCalculator = () => {
 
         <LineWithCircle />
 
-        <div className={styles.additionalSections}>
-          <div className={styles.textSection}>
-            <span className={styles.label}>Set up Time Deposit with</span>
-            <OptionButtons
-              options={['New Funds', 'Existing Funds']}
-              activeOption="New Funds"
-              onClick={() => {}}
-            />
-          </div>
-          <div className={styles.textSection}>
-            <span className={styles.label}>Duration of Deposit</span>
-            <OptionButtons
-              options={['6 Months', '12 Months']}
-              activeOption="6 Months"
-              onClick={() => {}}
-            />
-          </div>
-        </div>
+        <DepositOptions
+          fundsOption={fundsOption}
+          setFundsOption={setFundsOption}
+          durationOption={durationOption}
+          setDurationOption={setDurationOption}
+        />
       </div>
 
       <GrayContainer />

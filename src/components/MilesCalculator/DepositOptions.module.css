@@ -1,0 +1,16 @@
+.depositOptionsContainer {
+    margin-top: 20px;
+  }
+  
+  .sectionHeadersRow {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+  }
+  
+  .radioButtonsRow {
+    display: flex;
+    justify-content: space-between;
+  }
+  
